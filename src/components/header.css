@@ -1,0 +1,15 @@
+.nav{
+    color:white;
+    font-family:'Open Sans',sans-serif;
+}
+.nav .brand{
+    float: left;
+    color: white;
+}
+.nav .nav-items{
+    text-align: right;
+}
+.nav .link-item{
+    color: white;
+    padding:1.5rem;
+}

@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -16,17 +17,15 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+     <div className='nav'>
+      <Link to="/"><h4 className="brand">{siteTitle}</h4></Link>
+      <nav className="nav-items">
+        <Link to='/' className="link-item">Home</Link>
+        <Link to='/about' className="link-item">about us</Link>
+        <Link to='/blog' className="link-item">blogs</Link>
+        <Link to='/contact' className="link-item">contact us</Link>
+      </nav>
+    </div>
     </div>
   </header>
 )
@@ -36,7 +35,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `test website`,
 }
 
 export default Header

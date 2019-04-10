@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family:'Open Sans', Segoe UI,sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -42,6 +42,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none
 }
 a:active,
 a:hover {
